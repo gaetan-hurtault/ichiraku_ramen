@@ -1,0 +1,257 @@
+/***************************DEBUT***GLOBAL**************************/
+@charset "UTF-8";
+html {
+	scroll-behavior: smooth;
+  }
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto' ;
+	outline: 0px;
+}
+a
+{
+	text-decoration: none;
+	transition: all 0.5s ease;
+	color:#E1894E !important;
+}
+main a:hover{
+	color:#8b684f!important;
+	text-decoration: none;
+}
+.bg-orange
+{
+	background-color: #E1894E;
+}
+.bg-orangered
+{
+	background-color: #8b684f;
+}
+
+.cover-container
+{
+	background: url('../image/homepage/header.jpg') no-repeat center center, #604837;
+	background-blend-mode: screen;
+	background-size: cover;
+}
+.container-fluid
+{
+	max-width:2000px;
+}
+.arrow
+{
+	width: 100px;
+	transition: all 0.5s ease;
+	position:relative;
+	top:0px;
+	animation-duration: 1s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+}
+.arrow:hover{
+	animation-play-state: paused;
+}
+
+	@keyframes slidein {
+		0% {
+		top:0px;
+		}
+		50%
+		{
+			top:20px;
+		}
+		100% {
+		top:0px
+		}
+	}
+.navbar
+{
+	z-index:10000;
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.navbar:hover
+{
+	opacity: 1.0;
+}
+
+.navbar a{
+	font-family: 'Rock Salt', cursive;
+}
+.navbar a:hover{
+	letter-spacing: 3px;
+}
+
+#img1{
+	background: url('../image/homepage/fond1.jpg') no-repeat center center, #604837;
+	background-blend-mode: screen;
+	background-size: cover;	
+	min-height:400px;
+}
+#img2{
+	background: url('../image/homepage/fond2.jpg') no-repeat center center, #604837;
+	background-blend-mode: screen;
+	background-size: cover;	
+	min-height:400px;
+}
+#img3{
+	background: url('../image/homepage/fond3.jpg') no-repeat center center, #604837;
+	background-blend-mode: screen;
+	background-size: cover;	
+	min-height:400px;
+}
+
+#menu1{
+	background: url('../image/menu/menu1.jpg') no-repeat center center, #604837;
+	background-blend-mode: screen;
+	background-size: cover;	
+	min-height:400px;
+}
+#menu2{
+	background: url('../image/menu/menu2.jpg') no-repeat center center, #604837;
+	background-blend-mode: screen;
+	background-size: cover;	
+	min-height:400px;
+}
+#menu3{
+	background: url('../image/menu/menu3.jpg') no-repeat center center, #604837;
+	background-blend-mode: screen;
+	background-size: cover;	
+	min-height:400px;
+}
+h1{
+	font-size: 60px;
+	border:5px solid white;
+	border-radius: 10px;
+	padding :20px 40px;
+	backdrop-filter: blur(2px);
+	transform: rotate(8deg);
+}
+h2{
+	transform: rotate(-2deg);
+}
+h1,h2,h5,h6{
+	font-family: 'Rock Salt', cursive;
+}
+
+.map_google
+{
+	height:400px;
+	border:none;
+}
+
+#navfooter ul{
+	list-style-type: none;
+}
+
+#navfooter a:hover{
+	letter-spacing: 3px;
+}
+  /* common */
+  .ribbon {
+	font-size: 18px !important;
+	padding: 10px 10px;
+	width: 60%;
+	right:-0.5em;
+	top :20px;
+	position: absolute;
+	background: #86a078;
+	color: #fff;
+	text-align: center;
+   }
+   .ribbon-content
+   {
+	font-family: 'Rock Salt', cursive;
+   }
+   .ribbon:after {
+	right: -1em;
+	border-left-width: 1em;
+	border-right-color: transparent;
+   }
+   .ribbon .ribbon-content:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #5e6763 transparent transparent transparent;
+	bottom: -1em;
+   }
+   .ribbon .ribbon-content:after {
+	right: 0;
+	border-width: 1em 0.5em 0 0;
+   }
+
+   button.homepage
+   {
+	   transition: all 0.5s ease;
+	   border:3px solid #E1894E;
+	   background-color: #E1894E;
+	   color: white;
+	   font-family: 'Rock Salt', cursive;
+	   border-radius: 20px;
+   }
+   button.homepage:hover
+   {
+		background-color: white;
+		color:#E1894E;
+   }
+
+   #myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 10px; /* Place the button at the bottom of the page */
+	right: 10px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	transform: rotate(180deg);
+	background-color: #E1894E;
+	transition: all 0.5s ease;
+	border-radius:50px;
+  }
+  #myBtn img{
+	  width:50px;
+  }
+  #myBtn:hover {
+	background-color: #5e6763;
+  }
+  #logo_menu
+  {
+	transition: all 0.5s ease;
+  }
+  #logo_menu:hover{
+	  transform:rotate(360deg);
+
+  }
+
+  #social_network svg{
+	fill:white;
+	transition: fill 0.5s ease;
+  }
+
+  #social_network #facebook:hover{
+	  fill:#70b2d8;
+  }
+  #social_network #twitter:hover{
+	  fill:#70c6d8;
+  }
+  #social_network #youtube:hover{
+	  fill:#d87070;
+  }
+  #social_network #instagram:hover{
+	  fill:#b184ce;
+  }
+
+  .block_text
+  {
+	  background: url('../image/papertext.jpg') repeat center center;
+  }
+  #secondparty
+  {
+	position: absolute;
+	top:-72px;  
+}
